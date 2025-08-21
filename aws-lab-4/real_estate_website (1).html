@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Homes - Real Estate Agency</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f39c12;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+    .hero h2 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .properties {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .property-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .property-card:hover {
+      transform: scale(1.05);
+    }
+    .property-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .property-card h3 {
+      margin: 15px 0 5px;
+    }
+    .property-card p {
+      padding: 0 10px 15px;
+    }
+    .agents, .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .agent, .testimonial {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .agent:hover, .testimonial:hover {
+      transform: translateY(-5px);
+    }
+    .agent img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dream Homes</h1>
+    <nav>
+      <a href="#properties">Properties</a>
+      <a href="#agents">Agents</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Find Your Perfect Home</h2>
+  </section>
+
+  <section id="properties" class="section">
+    <h2>Featured Properties</h2>
+    <div class="properties">
+      <div class="property-card">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="House 1">
+        <h3>Luxury Villa</h3>
+        <p>4 Bed · 3 Bath · $500,000</p>
+      </div>
+      <div class="property-card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="House 2">
+        <h3>Modern Apartment</h3>
+        <p>2 Bed · 2 Bath · $250,000</p>
+      </div>
+      <div class="property-card">
+        <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=800&q=80" alt="House 3">
+        <h3>Cozy Cottage</h3>
+        <p>3 Bed · 2 Bath · $180,000</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="agents" class="section">
+    <h2>Meet Our Agents</h2>
+    <div class="agents">
+      <div class="agent">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Agent 1">
+        <h3>Jane Smith</h3>
+        <p>Senior Agent with 10 years of experience helping families find their dream homes.</p>
+      </div>
+      <div class="agent">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Agent 2">
+        <h3>John Doe</h3>
+        <p>Specialist in luxury properties and commercial spaces across the city.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"Dream Homes made buying our first home so easy. Highly recommended!"</p>
+        <strong>- Emily R.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Professional agents and excellent service. Found the perfect property!"</p>
+        <strong>- Michael B.</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: info@dreamhomes.com | Phone: +1 234 567 890</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Dream Homes. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
